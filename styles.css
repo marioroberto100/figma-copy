@@ -1,3 +1,43 @@
+@media (max-width: 480px) {
+  .logo {
+    font-weight: bold;
+    font-size: 0.8rem;
+    left: 0;
+  }
+
+  .navbar nav a {
+    font-size: 10px;
+    font-weight: bold;
+    
+
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .quote-btn {
+    font-size: 10px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: end;
+    padding: 15px;
+    background-color: #ff4d4d !important;
+  
+
+
+  }
+
+
+  .navbar {
+    height: 60px;
+  }
+}
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,11 +52,13 @@ body {
 
 /* Navbar */
 .navbar {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 3rem;
   align-items: center;
   border-bottom: 1px solid #eee;
+  position: fixed
 }
 
 .navbar .logo {
@@ -33,7 +75,7 @@ body {
 .quote-btn {
   padding: 0.5rem 1rem;
   border: 1px solid #1a1a1a;
-  background: none;
+ 
   cursor: pointer;
   border-radius: 5px;
 }
@@ -111,21 +153,29 @@ body {
 }
 
 .services-header {
-  text-align: left;
+  text-align: top;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .services-header h2 {
   background-color: #ff4d4d;
   color: #000;
-  display: inline-block;
+  display: flex;
+  align-items: top;
   padding: 5px 10px;
   border-radius: 4px;
+
+
 }
+
 
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 columnas iguales */
+  grid-template-columns: 1fr 1fr;
+  /* 3 columnas iguales */
   gap: 20px;
 }
 
